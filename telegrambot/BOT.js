@@ -1,14 +1,14 @@
 const TelegramBot = require("node-telegram-bot-api");
 const db = require("./db.js");
-const token = process.env.BOT;
+const token = "7905054877:AAGuyxaMCWfY7bkmSShCU6f1WZ6eFQ9Nt84";
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("polling_error", (error) => {
   console.error("Polling error:", error);
 });
 
-const channelName = "@Abboam";
-const groupName = "@Abbomatest";
+const channelName = "@x";
+const groupName = "@x";
 
 // Function to handle referral registration
 bot.onText(/\/start (.+)/, (msg, match) => {
